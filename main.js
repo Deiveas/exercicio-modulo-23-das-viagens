@@ -252,10 +252,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (selectedValue === "1") {
       viagemLuxoPromo.PromoLuxo();
-      exibirMensagem(" Sortudo !! 50% desconto R$ 2.250,00");
+      exibirMensagem(" Sortudo(a) !! 50% desconto R$ 2.250,00");
     } else if (selectedValue === "2") {
       viagemEconPromo.PromoEcon();
-      exibirMensagem(" Sortudo !! 50% desconto R$ 1.500,00");
+      exibirMensagem(" Sortudo(a) !! 50% desconto R$ 1.500,00");
     } else {
       exibirMensagem("Selecione uma opção antes de tentar a sorte.");
     }
