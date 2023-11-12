@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAS Agência de Viagens</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container img">
+        <img
+          class="img-fluid img-thumbnail m-5"
+          src="https://th.bing.com/th/id/OIG.CWw0Gq9P13Qn7HRs7Gzl?pid=ImgGn"
+          alt="background-header"
+        />
+        <h1 class="h1 m-5">DAS Agência de Viagens</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h4 class="h4">Escolha a classe que você deseja viajar:</h4>
+    </div>
+    <div class="container">
+      <select
+        class="form-select mt-5 w-100"
+        aria-label="Default select example"
+      >
+        <option selected>Clique para selecionar</option>
+        <option value="1">Luxo</option>
+        <option value="2">Econômica</option>
+      </select>
+    </div>
+    <div class="container mt-5">
+      <form id="viagemForm" class="d-flex flex-wrap gap-5 p-5">
+        <div class="form-group w-100">
+          <label class="mb-3" for="aeronave">Aeronave:</label>
+          <input type="text" class="form-control" id="aeronave" readonly />
+        </div>
+        <div class="form-group w-100">
+          <label class="mb-3" for="capacidade">Capacidade:</label>
+          <input type="text" class="form-control" id="capacidade" readonly />
+        </div>
+        <div class="form-group w-100">
+          <label class="mb-3" for="classe">Classe:</label>
+          <input type="text" class="form-control" id="classe" readonly />
+        </div>
+        <div class="form-group w-100">
+          <label class="mb-3" for="origem">Origem:</label>
+          <input type="text" class="form-control" id="origem" readonly />
+        </div>
+        <div class="form-group w-100">
+          <label class="mb-3" for="destino">Destino:</label>
+          <input type="text" class="form-control" id="destino" readonly />
+        </div>
+        <div class="form-group w-100">
+          <label class="mb-3" for="custoPassagem">Custo passagem:</label>
+          <input type="text" class="form-control" id="custoPassagem" readonly />
+        </div>
+        <div class="form-group w-100">
+          <button
+            id="comprePassagemBtn"
+            class="btn btn-outline-info text-nowrap"
+            type="submit">
+            Compre sua passagem
+          </button>
+          <div class="container compra">
+            <span id="compra"></span>
+          </div>
+        </div>
+        <div class="form-group w-100">
+          <button
+            id="tenteSorteBtn"
+            class="btn btn-outline-info text-nowrap tenteSorteBtn"
+            type="button"
+          >
+            Tente a sorte agora
+          </button>
+        </div>
+      </form>
+      <div>
+        <span class="comprar blinking mb-3" id="comprar"></span>
+      </div>
+      <picture class="img2" id="A380">
+        <img
+          class="img-fluid img-thumbnail p-1 w-100"
+          style="display: none"
+          src="https://th.bing.com/th/id/OIG.x4v.vPwec6aailuOiwIZ?pid=ImgGn"
+          alt="A380"
+        />
+      </picture>
+      <picture id="B777">
+        <img
+          class="img-fluid img-thumbnail p-1 w-100"
+          style="display: none"
+          src="https://th.bing.com/th/id/OIG.yMKnXa18z.Apo8ACK6Sz?pid=ImgGn&w=1024&h=1024&rs=1"
+          alt="B777"
+        />
+      </picture>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 DAS Agência de Viagens. Todos os direitos reservados. <br> Desenvolvido: Deive Silva</p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
